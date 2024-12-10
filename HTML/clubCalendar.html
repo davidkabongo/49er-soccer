@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>49ers Mens Soccer</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="Charlotte-Favicon" href="/Assets/Icons/favicon_io/favicon.ico" type="image/49erSoccer-icon">
+    <script src="/JavaScript/calendar.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="charlotte-logo" src="/Assets/Images/49erSoccer-removebg-preview.png">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="clubCalendar.html">Club Calendar</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="signin-button"><i class="fa-regular fa-user"></i></button></li> <!-- Sign In Button -->
+            </ul>
+        </nav>
+
+        <div class="hamburger-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="calendar-section">
+            <h2 class="page-heading">Club Calendar</h2>
+            
+            <div id="calendar"></div>
+            
+            <div id="event-form-container" style="display: none;">
+                <h3>Add Match</h3>
+                <form id="event-form">
+                    <input type="text" id="event-name" placeholder="Event Name" required>
+                    <input type="date" id="event-date" required>
+                    <textarea id="event-description" placeholder="Event Description"></textarea>
+                    <button type="submit">Add Match</button>
+                </form>
+            </div>
+            
+            <h3>Upcoming Matches</h3>
+            <ul id="event-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 David Kabongo</p>
+    </footer>
+</body>
+</html>
